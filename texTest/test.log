@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.141592653-2.6-0.999997 (TeX Live 2025) (preloaded format=xelatex 2025.5.8)  8 MAY 2025 15:42
+This is XeTeX, Version 3.141592653-2.6-0.999997 (TeX Live 2025) (preloaded format=xelatex 2025.5.8)  8 MAY 2025 15:55
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -710,12 +710,12 @@ L3 programming layer <2022/08/05>
 LaTeX Font Warning: Some font shapes were not available, defaults substituted.
 
 Package rerunfilecheck Info: File `test.out' has not changed.
-(rerunfilecheck)             Checksum: CB3510579576215BB7C9412885BE677D;956.
+(rerunfilecheck)             Checksum: E4CE4A175433FF310290C8534E2877CC;1072.
  ) 
 Here is how much of TeX's memory you used:
  16269 strings out of 475796
  328855 string characters out of 5772879
- 955585 words of memory out of 5000000
+ 955586 words of memory out of 5000000
  38980 multiletter control sequences out of 15000+600000
  567964 words of font info for 111 fonts, out of 8000000 for 9000
  36 hyphenation exceptions out of 8191
