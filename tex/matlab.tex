@@ -22,7 +22,7 @@
 % 页眉页脚
 \pagestyle{fancy}
 \fancyhf{}
-\fancyhead[L]{中文测试文档}
+\fancyhead[L]{MATLAB SIMULATION}
 \fancyhead[R]{\thepage}
 
 % 超链接颜色
@@ -47,16 +47,32 @@
 }
 
 % 正文开始
-\title{\Huge 中文 LaTeX 测试文档\par \vspace{1em} \Large（适用于 XeLaTeX 编译）}
-\author{\large 作者：110gituser\\}
-\date{\today}
+\title{\Huge MATLAB SIMULATION\par \vspace{.1em}}
+\author{\large author:\href{https://github.com/110gituser/MATLAB}{110gituser}\\}
+\date{2025}
+
 \begin{document}
 \maketitle
 \cleardoublepage
 \tableofcontents
 \cleardoublepage
 
-\section{LM0:使用拉格朗日乘数法求解约束优化问题}
+\section{文件解析}
+\begin{longtable}{@{}ll@{}}
+    \toprule
+    \textbf{文件名} & \textbf{说明} \\
+    \midrule
+    \texttt{test.tex} & LaTeX 源文件，包含文档内容。 \\
+    \texttt{test.pdf} & 编译后生成的 PDF 文件，即最终文档。 \\
+    \texttt{test.aux} & 辅助文件，存储交叉引用信息。 \\
+    \texttt{test.log} & 编译日志，记录编译过程中的信息、警告与错误。 \\
+    \texttt{test.out} & 输出文件，可能包含章节或标题等信息（依赖文档类）。 \\
+    \texttt{test.synctex.gz} & 用于源代码与 PDF 同步跳转的文件。 \\
+    \texttt{test.toc} & 目录文件，用于生成文档的目录结构。 \\
+    \bottomrule
+\end{longtable}
+
+\section{001.m:使用拉格朗日乘数法求解约束优化问题}
 
 本问题的目标是在单位圆约束下，最小化一个二维函数：
 \[
@@ -89,35 +105,7 @@ g(x_1, x_2) = x_1^2 + x_2^2 - 1 = 0
 
 求解该方程组可以得到所有可能的驻点。再将这些点代入目标函数 \( f(x_1, x_2) \) 中，比较其函数值即可确定极小值点。
 
-
 该方法清晰地展示了如何在非线性约束下寻找目标函数的极值。通过引入拉格朗日乘子，我们将约束优化问题转化为无约束的方程组求解问题，便于理论分析与数值实现。
-
-\section{引言}
-这是一个用 \LaTeX{} 撰写的中文文档示例。本文旨在展示中文的支持能力，并测试不同的排版元素。
-\section{段落与注释}
-你可以使用多种方式输入中文段落。例如：
-中国是一个有着悠久历史的国家。她的文化源远流长，科技发展日新月异。
-我们可以通过 \LaTeX{} 精确控制排版结构，实现优美、规范的学术文档。
-\section{数学公式}
-行内公式示例：著名的爱因斯坦质能方程 $E = mc^2$。
-独立公式示例：
-\[
-f(x) = \int_{-\infty}^{\infty} e^{-x^2} dx
-\]
-\section{列表展示}
-\subsection{无序列表}
-\begin{itemize}
-    \item 项目一：数据采集
-    \item 项目二：数据预处理
-    \item 项目三：建模分析
-\end{itemize}
-\subsection{有序列表}
-\begin{enumerate}
-    \item 引言
-    \item 方法
-    \item 结果
-    \item 结论
-\end{enumerate}
 
 \section{图片插入}
 \begin{figure}[h]
@@ -125,31 +113,5 @@ f(x) = \int_{-\infty}^{\infty} e^{-x^2} dx
     \includegraphics[width=0.5\textwidth]{example-image}
     \caption{这是一个示例图片}
 \end{figure}
-\section{文件解析}
-\begin{longtable}{@{}ll@{}}
-    \toprule
-    \textbf{文件名} & \textbf{说明} \\
-    \midrule
-    \texttt{test.tex} & LaTeX 源文件，包含文档内容。 \\
-    \texttt{test.pdf} & 编译后生成的 PDF 文件，即最终文档。 \\
-    \texttt{test.aux} & 辅助文件，存储交叉引用信息。 \\
-    \texttt{test.log} & 编译日志，记录编译过程中的信息、警告与错误。 \\
-    \texttt{test.out} & 输出文件，可能包含章节或标题等信息（依赖文档类）。 \\
-    \texttt{test.synctex.gz} & 用于源代码与 PDF 同步跳转的文件。 \\
-    \texttt{test.toc} & 目录文件，用于生成文档的目录结构。 \\
-    \bottomrule
-\end{longtable}
-\section{代码高亮}
-下面是一个 Python 示例代码：
-\begin{lstlisting}[language=Python]
-def factorial(n):
-    if n == 0:
-        return 1
-    else:
-        return n * factorial(n-1)
-\end{lstlisting}
-\section{引用与链接}
-我们可以引用其他部分，比如参见第 \ref{sec:conclusion} 节。
-也可以添加超链接，例如访问 \href{https://www.latex-project.org}{LaTeX 官网}。
 
 \end{document}
