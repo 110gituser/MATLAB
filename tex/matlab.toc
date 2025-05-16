@@ -1,3 +1,0 @@
-\contentsline {section}{\numberline {1}文件解析}{3}{section.1}%
-\contentsline {section}{\numberline {2}001.m:使用拉格朗日乘数法求解约束优化问题}{3}{section.2}%
-\contentsline {section}{\numberline {3}图片插入}{4}{section.3}%
