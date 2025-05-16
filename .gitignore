@@ -1,5 +1,5 @@
 *           # 首先忽略所有文件
 !*.pdf      # 然后排除（不忽略）.pdf文件
 !*.tex      # 排除.tex文件
-!*.m      # 排除.m文件
+!*.m        # 排除.m文件
 !.gitignore # 确保.gitignore本身被上传
